@@ -5,7 +5,7 @@ Blocksports.io is a decentralized application that eliminates the reliance on si
 
 ## Technical Documentation
 
-Please see the **Repository** above to download the full PDF version of the concept. 
+Please see the **Repository** above to download the full PDF or click [here](https://github.com/Zidious/Blocksports.io/blob/master/Blocksportsio_technical_documentation_final.pdf)
 
 
 
