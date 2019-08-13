@@ -1,6 +1,7 @@
-body{
+body {
     background-color: #222222 !important;
 }
+
 .navbar-brand {
     color: #73809f !important;
 }
@@ -18,13 +19,36 @@ body{
     margin-right: 5px !important;
 }
 
-.col-md-4 {
-    color: white !important;
-}
-
 .btn-outline-dark {
     color: #73809f !important;
 }
+
+.modal-content {
+    background-color: #222222 !important;
+    color: #73809f !important;
+    border-color: #73809f !important;
+}
+
+.modal-header {
+    border-bottom: 0 none !important;
+    justify-content: center !important;
+
+}
+
+.modal-footer {
+    border-top: 0 none !important;
+}
+
+#close_icon {
+    color: #73809f !important;
+    text-shadow: none !important;
+}
+
+#close_icon:hover {
+    color: white !important;
+}
+
+
 
 .btn-outline-dark:hover {
     background-color: #73809f !important;
@@ -34,3 +58,4 @@ body{
 .row {
     margin-top: 20px !important;
 }
+
