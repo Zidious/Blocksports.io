@@ -53,9 +53,23 @@ body {
 .fa-key {
     color: #73809f !important;
 }
+
 .modal-footer {
     border-top: 0 none !important;
     background-color: rgba(115, 128, 159, 0.07) !important;
+}
+
+#back_button {
+    padding: 15px 0 0 0 !important;
+
+}
+#back_button {
+    color: #73809f !important;
+    text-shadow: none !important;
+}
+
+#back_button:hover {
+    color: white !important;
 }
 
 #close_icon {
@@ -64,6 +78,15 @@ body {
 }
 
 #close_icon:hover {
+    color: white !important;
+}
+
+#close_icon_sign {
+    color: #73809f !important;
+    text-shadow: none !important;
+}
+
+#close_icon_sign:hover {
     color: white !important;
 }
 

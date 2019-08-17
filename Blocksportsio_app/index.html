@@ -82,12 +82,66 @@
 
                     <!-- Register -->
                     <p class="text-center">Need an account?
-                        <a href="" id="sign_up" data-toggle="modal" data-target="#signupmodal">Sign Up</a>
+                        <a href="" id="sign_up" data-toggle="modal" data-target="#signupModal"
+                           data-dismiss="modal">Sign Up</a>
                     </p>
                 </form>
             </div>
             <div class="modal-footer text-center">
                 <a class="w-100" href="">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signup"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button id="back_button" type="button" class="close" data-toggle="modal" data-target="#loginModal"
+                        data-dismiss="modal">
+                    <i class="fas fa-angle-double-left"></i></button>
+                <h5 class="modal-title w-100 font-weight-bold" id="signup_title">Sign Up</h5>
+                <button id="close_icon_sign" type="button" class="close" data-dismiss="modal">
+                    <i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                               aria-describedby="user-addon">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                               aria-describedby="password-addon">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Confirm Password"
+                               aria-label="ConfirmPassword"
+                               aria-describedby="password-addon-confirm">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address" aria-label="Email"
+                               aria-describedby="email-addon">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Deposit Address"
+                               aria-label="DepositAddress"
+                               aria-describedby="deposit-addon">
+                    </div>
+
+                    <!-- Create button -->
+                    <button class="btn btn-outline-dark btn-block font-weight-bold" type="submit">Create Account
+                    </button>
+
+                </form>
             </div>
         </div>
     </div>
