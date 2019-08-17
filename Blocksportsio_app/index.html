@@ -17,6 +17,10 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/393a9deb59.js"></script>
 
 </head>
@@ -50,34 +54,57 @@
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <div class="row">
-                    
-                </div>
-                <h5 class="modal-title font-weight-bold text-center" id="login">Login</h5>
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100 font-weight-bold" id="login">Login</h5>
                 <button id="close_icon" type="button" class="close" data-dismiss="modal">
-                    <i class="fas fa-times"></i>
-                </button>
+                    <i class="fas fa-times"></i></button>
             </div>
             <div class="modal-body">
-                ...
+                <form class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="user-addon-login"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                               aria-describedby="user-addon">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="password-addon-login"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                               aria-describedby="password-addon">
+                    </div>
+
+                    <!-- Sign in button -->
+                    <button class="btn btn-outline-dark btn-block font-weight-bold" type="submit">Login</button>
+
+                    <!-- Register -->
+                    <p class="text-center">Need an account?
+                        <a href="" id="sign_up" data-toggle="modal" data-target="#signupmodal">Sign Up</a>
+                    </p>
+                </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-dark btn-block font-weight-bold">Log in</button>
+            <div class="modal-footer text-center">
+                <a class="w-100" href="">Forgot Password?</a>
             </div>
         </div>
     </div>
 </div>
 
+
 <!--Sports Selection container-->
 <div class="container">
     <div class="row" style="height: 100px">
         <div class="col-6 col-md-4">
-            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">American Football
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">American
+                Football
             </button>
         </div>
         <div class="col-6 col-md-4">
-            <button type="button" class="btn btn-outline-dark  btn-lg btn-block" style="height: 100%">Badminton</button>
+            <button type="button" class="btn btn-outline-dark  btn-lg btn-block" style="height: 100%">Badminton
+            </button>
 
         </div>
         <div class="col-6 col-md-4">
@@ -90,15 +117,18 @@
             <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Boxing</button>
         </div>
         <div class="col-6 col-md-4">
-            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Cricket</button>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Cricket
+            </button>
         </div>
         <div class="col-6 col-md-4">
-            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">E-sports</button>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">E-sports
+            </button>
         </div>
     </div>
     <div class="row" style="height: 100px">
         <div class="col-6 col-md-4">
-            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Football</button>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Football
+            </button>
         </div>
         <div class="col-6 col-md-4">
             <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Golf</button>
@@ -116,7 +146,8 @@
             <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Tennis</button>
         </div>
         <div class="col-6 col-md-4">
-            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Something</button>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block" style="height: 100%">Something
+            </button>
         </div>
     </div>
 </div>
