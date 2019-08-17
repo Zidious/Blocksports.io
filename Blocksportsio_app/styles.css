@@ -2,6 +2,9 @@ body {
     background-color: #222222 !important;
 }
 
+h1 {
+    color: white !important;
+}
 .navbar-brand {
     color: #73809f !important;
 }
@@ -63,6 +66,7 @@ body {
     padding: 15px 0 0 0 !important;
 
 }
+
 #back_button {
     color: #73809f !important;
     text-shadow: none !important;
@@ -108,6 +112,22 @@ body {
     color: white !important;
 }
 
+#close_icon_sign_contact {
+    color: #73809f !important;
+    text-shadow: none !important;
+}
+
+#close_icon_sign_contact:hover {
+    color: white !important;
+}
+
+.rc-anchor-light {
+    background: #fff!important;
+    color: #fff!important; }
+
+.rc-anchor-normal{
+    background: #000 !important;
+    color: #000 !important; }
 
 .btn-outline-dark:hover {
     background-color: #73809f !important;
@@ -117,4 +137,3 @@ body {
 .row {
     margin-top: 20px !important;
 }
-
