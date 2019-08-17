@@ -72,6 +72,15 @@ body {
     color: white !important;
 }
 
+#back_button_forgot {
+    color: #73809f !important;
+    text-shadow: none !important;
+}
+
+#back_button_forgot:hover {
+    color: white !important;
+}
+
 #close_icon {
     color: #73809f !important;
     text-shadow: none !important;
@@ -90,6 +99,14 @@ body {
     color: white !important;
 }
 
+#close_icon_sign_forgot {
+    color: #73809f !important;
+    text-shadow: none !important;
+}
+
+#close_icon_sign_forgot:hover {
+    color: white !important;
+}
 
 
 .btn-outline-dark:hover {

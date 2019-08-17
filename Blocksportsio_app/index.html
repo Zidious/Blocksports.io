@@ -41,7 +41,9 @@
         </div>
 
         <div class="navbar-collapse justify-content-end">
-            <button type="button" class="btn btn-outline-dark">Contact Us</button>
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#contactUsModal">
+                Contact Us
+            </button>
             <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#loginModal">
                 Login
             </button>
@@ -88,7 +90,8 @@
                 </form>
             </div>
             <div class="modal-footer text-center">
-                <a class="w-100" href="">Forgot Password?</a>
+                <a class="w-100" href="" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Forgot
+                    Password?</a>
             </div>
         </div>
     </div>
@@ -111,28 +114,28 @@
             <div class="modal-body">
                 <form class="form-group">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        <input type="text" class="form-control" placeholder="Username" required aria-label="Username"
                                aria-describedby="user-addon">
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                        <input type="password" class="form-control" placeholder="Password" required aria-label="Password"
                                aria-describedby="password-addon">
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Confirm Password"
+                        <input type="password" class="form-control" placeholder="Confirm Password" required
                                aria-label="ConfirmPassword"
                                aria-describedby="password-addon-confirm">
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email Address" aria-label="Email"
+                        <input type="email" class="form-control" placeholder="Email Address" required aria-label="Email"
                                aria-describedby="email-addon">
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Deposit Address"
+                        <input type="text" class="form-control" placeholder="Deposit Address (Optional)"
                                aria-label="DepositAddress"
                                aria-describedby="deposit-addon">
                     </div>
@@ -147,6 +150,74 @@
     </div>
 </div>
 
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotpassword"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button id="back_button_forgot" type="button" class="close" data-toggle="modal"
+                        data-target="#loginModal"
+                        data-dismiss="modal">
+                    <i class="fas fa-angle-double-left"></i></button>
+                <h5 class="modal-title w-100 font-weight-bold" id="forgot_title">Forgot Password</h5>
+                <button id="close_icon_sign_forgot" type="button" class="close" data-dismiss="modal">
+                    <i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address" aria-label="Email" required
+                               aria-describedby="email-addon">
+                    </div>
+
+                    <!-- Confirm button -->
+                    <button class="btn btn-outline-dark btn-block font-weight-bold" type="submit">Continue
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Modal -->
+<div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactus"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100 font-weight-bold" id="contactus_title">Contact Us</h5>
+                <button id="close_icon_sign_contact" type="button" class="close" data-dismiss="modal">
+                    <i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name" aria-label="name" required
+                               aria-describedby="name-addon">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Subject" required aria-label="subject"
+                               aria-describedby="subject-addon">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address" required aria-label="Email"
+                               aria-describedby="email-addon">
+                    </div>
+                    <div class="input-group mb-3">
+                        <textarea class="form-control" placeholder="Message" required></textarea>
+                    </div>
+
+                    <!-- Confirm button -->
+                    <button class="btn btn-outline-dark btn-block font-weight-bold" type="submit">Send
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--Sports Selection container-->
 <div class="container">
