@@ -145,6 +145,7 @@ h1 {
 
 tr, th {
     color: #73809f !important;
+    border-top: transparent !important;
 }
 
 .table-striped {
